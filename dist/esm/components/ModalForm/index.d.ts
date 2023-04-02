@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from 'react';
-import 'react-responsive-modal/styles.css';
+import './styles.css';
 type Props = {
     isOpen: boolean;
     onClose: () => void;

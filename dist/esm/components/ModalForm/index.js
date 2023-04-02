@@ -1,5 +1,5 @@
 import React from 'react';
-import 'react-responsive-modal/styles.css';
+import './styles.css';
 import { Modal } from 'react-responsive-modal';
 var ModalForm = function (_a) {
     var isOpen = _a.isOpen, children = _a.children, onClose = _a.onClose;
