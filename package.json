@@ -1,6 +1,6 @@
 {
   "name": "pg-modal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -14,8 +14,8 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "clean": "rimraf dist/",
-    "copy-files": "copyfiles -u 1 src/**/*.css dist/",
-    "prepare": "yarn clean && yarn build && yarn copy-files",
+    "copy-files": "copyfiles -u 1 ./src/components/ModalForm/styles.css ./dist/cjs/components/ModalForm/styles.css && copyfiles -u 1 ./src/components/ModalForm/styles.css ./dist/esm/components/ModalForm/styles.css",
+    "prepare": "yarn build && yarn copy-files",
     "prepublishOnly": "yarn lint"
   },
   "repository": {
