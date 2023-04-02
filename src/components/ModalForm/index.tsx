@@ -10,7 +10,7 @@ type Props = {
 const ModalForm: FC<PropsWithChildren<Props>> = ({
   isOpen,
   children,
-  onClose = () => {}
+  onClose
 }) => {
   return (
     <div>
