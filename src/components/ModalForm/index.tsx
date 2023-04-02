@@ -1,5 +1,5 @@
 import React, { FC, PropsWithChildren } from 'react';
-import 'react-responsive-modal/styles.css';
+import './styles.css';
 import { Modal } from 'react-responsive-modal';
 
 type Props = {
